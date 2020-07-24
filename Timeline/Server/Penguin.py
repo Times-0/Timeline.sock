@@ -87,6 +87,7 @@ class Penguin(WebSocketMixin, PenguinDB, ExtensibleObject):
 
     def __init__(self, engine):
         super(Penguin, self).__init__()
+        PenguinDB.__init__(self)
 
         self.engine = engine
         self.Protocol = engine.server_protocol 
@@ -99,7 +100,6 @@ class Penguin(WebSocketMixin, PenguinDB, ExtensibleObject):
         self.buildPenguin()
 
     def __del__(self):
-        print("hello?mo")
         self.logger.warn('Discarding Penguin<%s> Object: %s : %s', self.engine.server_protocol, str(self.client), self.getPortableName())
 
     def buildPenguin(self):
