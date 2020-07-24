@@ -3,7 +3,7 @@ Websocket extension for Timeline
 
 
 # Requirements
-Python module `TwistedWebsocket` is the only extra requirement.
+Python module [TwistedWebsocket](https://github.com/tuxlinuxien/TwistedWebsocket) is the only extra requirement.
 
 ```
 pip install TwistedWebsocket
