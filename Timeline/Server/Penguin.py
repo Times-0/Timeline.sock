@@ -33,20 +33,6 @@ import datetime as dt
 
 from TwistedWebsocket.server import Protocol
 
-class LR(LineReceiver, TimeoutMixin):
-    def makeConnection(self, transport):
-        pass
-
-    def connectionLost(self, reason):
-        pass
-
-    def lineReceived(self, line):
-        pass
-    
-    def send(*a):
-        pass
-
-
 class WebSocketMixin(Protocol):
     def onHandshake(self, header):
         pass
